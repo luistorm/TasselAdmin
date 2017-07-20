@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TasselAdmin</string>
+    <string name="products">Products</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="images">Images</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="comments">Comments</string>
+    <string name="loading">Loading...</string>
+    <string name="save">Save</string>
+    <string name="saved">Saved changes!</string>
+    <string name="not_saved">Not saved changes :(</string>
+    <string name="write">Write something!</string>
+</resources>

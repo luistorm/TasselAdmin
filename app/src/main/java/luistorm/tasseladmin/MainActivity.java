@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private DrawerLayout mDrawerLayout;
     private ArrayList<NavItem> mNavItems = new ArrayList<NavItem>();
     private TextView tV,tV2,tV3,tV4;
-    private CardView cV;
+    private CardView cV,cV2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +85,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tV4.setTextSize(s4*2);
         cV = (CardView) findViewById(R.id.cardView3);
         cV.setOnClickListener(this);
+        cV2 = (CardView) findViewById(R.id.cardView4);
+        cV2.setOnClickListener(this);
     }
 
     @Override
@@ -121,6 +123,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if(view.getId() == cV.getId()) {
             Intent intent = new Intent(this,Ingredients.class);
+            startActivity(intent);
+        }
+        if(view.getId() == cV2.getId()) {
+            Intent intent = new Intent(this,Comments.class);
             startActivity(intent);
         }
     }

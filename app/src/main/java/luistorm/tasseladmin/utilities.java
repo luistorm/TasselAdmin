@@ -7,5 +7,5 @@ import android.database.sqlite.SQLiteDatabase;
  */
 
 public class utilities {
-    public static final String serverAddress = "http://192.168.0.113/tassel";
+    public static final String serverAddress = "http://192.168.1.5/tassel";
 }

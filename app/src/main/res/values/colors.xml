@@ -9,4 +9,6 @@
     <color name="colorBackground3">#ad7a41</color>
     <color name="gradient_start">#19afdd</color>
     <color name="gradient_end">#415b76</color>
+    <color name="gradient2_start">#fa7143</color>
+    <color name="gradient2_end">#cc3300</color>
 </resources>

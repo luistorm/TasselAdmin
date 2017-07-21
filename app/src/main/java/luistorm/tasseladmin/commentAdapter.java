@@ -55,10 +55,19 @@ public class commentAdapter extends RecyclerView.Adapter<commentAdapter.commentV
         }
 
         @Override
-        public void onBindViewHolder(commentAdapter.commentViewHolder viewHolder, int i) {
+        public void onBindViewHolder(final commentAdapter.commentViewHolder viewHolder, final int i) {
             viewHolder.name.setText(items.get(i).getName());
             viewHolder.commentVal.setText(items.get(i).getComment());
             viewHolder.cB.setChecked(items.get(i).getVisible() == 0);
+            viewHolder.cB.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(viewHolder.cB.isChecked())
+                        ((comment)items.get(i)).setVisible(0);
+                    else
+                        ((comment)items.get(i)).setVisible(1);
+                }
+            });
             switch (items.get(i).getStars()){
                 case 0:
                     viewHolder.iV.setImageResource(R.drawable.star1);
